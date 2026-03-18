@@ -5,13 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Going with Erin</title>
 
-  <!-- ✨ Fun font (Blank Mango vibe) -->
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600&display=swap" rel="stylesheet">
+  <!-- ✨ Gravitas One font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap" rel="stylesheet">
 
   <style>
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       background: #f3f0e8;
       display: flex;
       align-items: center;
@@ -31,19 +33,19 @@
       height: 160px;
       object-fit: cover;
       border-radius: 50%;
-      margin: 0 auto 18px;
+      margin: 0 auto 20px;
       display: block;
       border: 4px solid #cbcdcb;
     }
 
-    /* ✨ Updated heading font */
+    /* ✨ Updated heading */
     h1 {
-      margin-bottom: 28px;
+      margin: 0 0 32px;
       color: #44694c;
-      font-size: 30px;
-      font-family: 'Baloo 2', sans-serif;
-      font-weight: 600;
+      font-size: 34px;
+      font-family: 'Gravitas One', serif;
       letter-spacing: 1px;
+      line-height: 1.1;
     }
 
     .links {
@@ -73,6 +75,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       font-weight: 600;
       font-size: 16px;
       pointer-events: none;
@@ -99,8 +102,8 @@
 
     <div class="links">
 
-      <!-- Instagram (green) -->
-      <a class="btn instagram" href="https://instagram.com/goingwitherin" target="_blank">
+      <!-- Instagram -->
+      <a class="btn instagram" href="https://instagram.com/goingwitherin" target="_blank" rel="noopener noreferrer">
         <svg viewBox="0 0 300 100" preserveAspectRatio="none">
           <path fill="#44694c"
             d="M10,20 Q15,5 30,20 T60,20 T90,20 T120,20 T150,20 T180,20 T210,20 T240,20 T270,20 T290,20
@@ -111,8 +114,8 @@
         <span>Instagram</span>
       </a>
 
-      <!-- TikTok (blue) -->
-      <a class="btn tiktok" href="https://tiktok.com/@goingwitherin" target="_blank">
+      <!-- TikTok -->
+      <a class="btn tiktok" href="https://tiktok.com/@goingwitherin" target="_blank" rel="noopener noreferrer">
         <svg viewBox="0 0 300 100" preserveAspectRatio="none">
           <path fill="#5a82bd"
             d="M10,25 Q20,5 40,25 T80,25 T120,25 T160,25 T200,25 T240,25 T290,25
@@ -123,8 +126,8 @@
         <span>TikTok</span>
       </a>
 
-      <!-- Substack (red) -->
-      <a class="btn substack" href="https://substack.com/@goingwitherin" target="_blank">
+      <!-- Substack -->
+      <a class="btn substack" href="https://substack.com/@goingwitherin" target="_blank" rel="noopener noreferrer">
         <svg viewBox="0 0 300 100" preserveAspectRatio="none">
           <path fill="#da4f14"
             d="M10,22 Q18,5 35,22 T70,22 T105,22 T140,22 T175,22 T210,22 T245,22 T290,22
