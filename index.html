@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Going with Erin</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+      background: #f3f0e8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 24px;
+    }
+
+    .container {
+      text-align: center;
+      width: 100%;
+      max-width: 340px;
+    }
+
+    .profile-pic {
+      width: 110px;
+      height: 110px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin: 0 auto 18px;
+      display: block;
+      border: 4px solid #cbcdcb;
+    }
+
+    h1 {
+      margin-bottom: 28px;
+      color: #44694c;
+      font-size: 26px;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      align-items: center;
+    }
+
+    .btn {
+      position: relative;
+      width: 85%;
+      height: 60px;
+      text-decoration: none;
+      display: block;
+      transition: transform 0.2s ease;
+    }
+
+    .btn svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .btn span {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-weight: 600;
+      font-size: 16px;
+      pointer-events: none;
+    }
+
+    .instagram span { color: white; }
+    .tiktok span { color: white; }
+    .substack span { color: white; }
+
+    .btn:hover {
+      transform: translateY(-3px) scale(1.02);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <img class="profile-pic" src="erin.jpg" alt="Erin">
+
+    <h1>Going with Erin</h1>
+
+    <div class="links">
+
+      <!-- Instagram (NOW GREEN) -->
+      <a class="btn instagram" href="https://instagram.com/yourhandle" target="_blank">
+        <svg viewBox="0 0 300 100" preserveAspectRatio="none">
+          <path fill="#44694c"
+            d="
+            M10,20 
+            Q15,5 30,20 T60,20 T90,20 T120,20 T150,20 T180,20 T210,20 T240,20 T270,20 T290,20
+            Q295,50 290,80
+            Q270,95 240,80 T210,80 T180,80 T150,80 T120,80 T90,80 T60,80 T30,80 T10,80
+            Q5,50 10,20 Z
+            " />
+        </svg>
+        <span>Instagram</span>
+      </a>
+
+      <!-- TikTok (UNCHANGED) -->
+      <a class="btn tiktok" href="https://tiktok.com/@yourhandle" target="_blank">
+        <svg viewBox="0 0 300 100" preserveAspectRatio="none">
+          <path fill="#5a82bd"
+            d="
+            M10,25 
+            Q20,5 40,25 T80,25 T120,25 T160,25 T200,25 T240,25 T290,25
+            Q295,50 290,75
+            Q260,95 220,75 T180,75 T140,75 T100,75 T60,75 T20,75
+            Q5,50 10,25 Z
+            " />
+        </svg>
+        <span>TikTok</span>
+      </a>
+
+      <!-- Substack (NOW RED) -->
+      <a class="btn substack" href="https://your-substack-link.com" target="_blank">
+        <svg viewBox="0 0 300 100" preserveAspectRatio="none">
+          <path fill="#da4f14"
+            d="
+            M10,22 
+            Q18,5 35,22 T70,22 T105,22 T140,22 T175,22 T210,22 T245,22 T290,22
+            Q295,50 290,78
+            Q260,95 230,78 T200,78 T170,78 T140,78 T110,78 T80,78 T50,78 T20,78
+            Q5,50 10,22 Z
+            " />
+        </svg>
+        <span>Substack</span>
+      </a>
+
+    </div>
+  </div>
+</body>
+</html>
